@@ -5,13 +5,20 @@ function currentTime() {
     var sec = date.getSeconds();
     var midday = "AM";
     midday = (hour >= 12) ? "PM" : "AM"; /* assigning AM/PM */
-    hour = (hour == 0) ? 12 : ((hour > 12) ? (hour - 12): hour); /* assigning hour in 12-hour format */
+    // hour = (hour == 0) ? 12 : ((hour > 12) ? (hour - 12): hour); /* assigning hour in 12-hour format */
     hour = updateTime(hour);
     min = updateTime(min);
     sec = updateTime(sec);
     document.getElementById("clock").innerText = hour + ":" + min + ":" + sec + " " + midday; /* adding time to the div */
     
       var t = setTimeout(currentTime, 1000); /* setting timer */
+
+      var months=['jan','feb','mar','apr','may','jun','jul','agu','sept','oct','nov','dec'];
+      var day=['sun','mon','tues','wed','thus','fri','sata'];
+      var day=day[date.getDay()];
+      var months=months[date.getMonth()];
+      var year=date.getFullYear();
+      document.getElementById("date").innerText=day+" "+year+" "+months;
     }
   
   function updateTime(k) { /* appending 0 before time elements if less than 10 */
