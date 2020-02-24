@@ -17,8 +17,9 @@ function currentTime() {
       var day=['sun','mon','tues','wed','thus','fri','sata'];
       var day=day[date.getDay()];
       var months=months[date.getMonth()];
+      var days=date.getDate();
       var year=date.getFullYear();
-      document.getElementById("date").innerText=day+" "+year+" "+months;
+      document.getElementById("date").innerText=day+" "+year+" "+days+"-"+months;
     }
   
   function updateTime(k) { /* appending 0 before time elements if less than 10 */
