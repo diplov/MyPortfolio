@@ -1,0 +1,83 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+*{
+    margin: 0;
+    padding: 0;
+}
+.container_wrapper{
+background: linear-gradient(90deg,#fdb927,#552583);
+/* background: linear-gradient(90deg,#ff8a00,#e52e71); */
+height: 100vh;
+}
+.all-center{
+text-align: center;
+position: relative;
+top: 50%;
+color: white;
+font-family: 'Sriracha', cursive;
+}
+h1.all-center{
+font-size: 65px;
+}
+h3.all-center{
+position: relative;
+font-size: 25px;
+top: 52%;
+font-family: 'Roboto', sans-serif;
+}
+.social_wrapper_button{
+top: 42px;
+position: relative;
+}
+.social_ul{
+list-style-type: none;
+/* font-family: 'Odibee Sans', cursive; */
+}
+.social_ul li{
+display: inline-block;
+font-size: 30px;
+}
+.social_ul li a{
+padding:0px 22px 10px 22px;
+color:white;
+font-weight: 800;
+text-decoration: none;
+}
+.social_ul a :hover{
+text-decoration: none;
+
+}
+.social_wrapper_icon{
+transform: rotate(-90deg);
+right: -110px;
+position: absolute;
+}
+.social_wrapper_icon li a{
+font-size: 25px;
+padding: 12px 18px;
+/* background: linear-gradient(45deg,red,gold);
+border-radius: 30%; */
+}
+#clock{
+font-family: sans-serif;
+font-size:35px;
+text-shadow:0px 0px 1px #fff;
+color:#fff;
+text-align: center;
+
+}
+.clockdate_wrapper{
+position: absolute;
+top: 21px;
+right: 63px; 
+text-align: center;
+padding: 10px 5px 10px 0px;
+}
+#date{
+letter-spacing:5px;
+font-size:14px;
+font-family:arial,sans-serif;
+color:white;
+font-style: initial;
+text-align: center;
+padding-top: 5px;
+}
